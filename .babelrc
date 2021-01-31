@@ -1,0 +1,24 @@
+{
+  "presets": [
+    [
+      "@babel/preset-env",
+      {
+        "targets": [
+          "last 4 iOS versions",
+          "last 3 Safari versions",
+          "last 1 ChromeAndroid version",
+          "last 2 Chrome versions",
+          "last 2 Samsung versions",
+          "last 2 Firefox versions",
+          "last 1 Edge version"
+        ]
+      }
+    ],
+    "@babel/preset-react",
+    "@babel/typescript"
+  ],
+  "plugins": [["babel-plugin-styled-components", { "displayName": false }]],
+  "ignore": ["**/*.stories.tsx"],
+  "comments": false,
+  "minified": true
+}

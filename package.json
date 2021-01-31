@@ -1,0 +1,50 @@
+{
+  "name": "@edwardandrewb/elements",
+  "version": "0.0.15",
+  "description": "Styled React elements for my websites.",
+  "main": "lib/index.js",
+  "types": "lib/index.d.ts",
+  "files": [
+    "lib"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Ed-Ed/elements"
+  },
+  "scripts": {
+    "dev": "start-storybook -p 9000",
+    "lint": "eslint src/**/* --ext .ts,.tsx",
+    "clean": "rm -rf lib",
+    "build::babel": "babel src --out-dir lib --extensions \".ts,.tsx\"",
+    "build": "yarn lint && yarn clean && yarn build::babel && tsc"
+  },
+  "peerDependencies": {
+    "react": "^16.4.0",
+    "styled-components": "^5.2.0"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.12.1",
+    "@babel/core": "^7.12.3",
+    "@babel/preset-env": "^7.12.1",
+    "@babel/preset-react": "^7.12.1",
+    "@babel/preset-typescript": "^7.12.1",
+    "@storybook/addon-a11y": "^6.0.28",
+    "@storybook/addon-knobs": "^6.0.28",
+    "@storybook/addon-viewport": "^6.0.28",
+    "@storybook/react": "^6.0.27",
+    "@types/react": "^16.9.53",
+    "@types/styled-components": "^5.1.4",
+    "@typescript-eslint/eslint-plugin": "^4.5.0",
+    "@typescript-eslint/parser": "^4.5.0",
+    "babel-loader": "^8.1.0",
+    "babel-plugin-styled-components": "^1.11.1",
+    "eslint": "^7.12.0",
+    "eslint-config-prettier": "^6.14.0",
+    "eslint-plugin-prettier": "^3.1.4",
+    "eslint-plugin-react": "^7.21.5",
+    "react": "^16.14.0",
+    "react-dom": "^16.14.0",
+    "styled-components": "^5.2.0",
+    "typescript": "^4.0.3"
+  }
+}

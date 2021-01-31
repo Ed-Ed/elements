@@ -1,0 +1,13 @@
+{
+  "compilerOptions": {
+    "jsx": "react",
+    "esModuleInterop": true,
+    "outDir": "lib",
+    "declaration": true,
+    "emitDeclarationOnly": true,
+    "types": ["react"],
+    "lib": ["esnext"]
+  },
+  "include": ["@types/styled-components.d.ts", "./src/**/*.*"],
+  "exclude": ["node_modules", "lib", "**/*.stories.tsx"]
+}
